@@ -17,13 +17,9 @@
 
 
             
-            <form action="{{ route('categories.destroy', $category->id) }}" method="POST" style="display:inline-block;">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="btn btn-outline-danger">Delete</button>
-            </form>
+           
 
-            <a href="{{ route('categories.index') }}" class="btn btn-light">Back to List</a>
+            <a href="{{ route('categories.index') }}" class="btn btn-gradient-primary me-2">Back to List</a>
 
         </div>
     </div>

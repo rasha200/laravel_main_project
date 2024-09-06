@@ -81,7 +81,7 @@
     <div style="background: #fff; padding: 20px; border-radius: 5px; text-align: center;">
         <p>Are you sure you want to delete this user?</p>
         <button id="confirmButton" class="btn btn-outline-danger">delete</button>
-        <button id="cancelButton" class="btn btn-secondary">Cancel</button>
+        <button id="cancelButton" class="btn btn-outline-secondary">Cancel</button>
     </div>
 </div>
 

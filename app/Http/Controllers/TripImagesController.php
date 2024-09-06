@@ -50,7 +50,7 @@ class TripImagesController extends Controller
         }
     
        
-        return redirect()->route('trips.index')->with('success', 'Images uploaded successfully');
+        return to_route('trips.showadmin', $tripid);
     }
     
 

@@ -57,7 +57,7 @@
                 @enderror
                 <small class="form-text text-muted">Format: 10 digits</small>
             </div>
-
+            @if(Auth()->user()->usertype == "superAdmin")
             <div class="form-group">
                 <label for="usertype">User Type</label>
                 <select class="form-control @error('usertype') is-invalid @enderror" id="usertype" name="usertype" required>
@@ -70,9 +70,10 @@
                 </span>
                 @enderror
             </div>
+            @endif
 
             <button type="submit" class="btn btn-gradient-primary me-2">Add new user</button>
-            <a href="{{ route('users.index') }}" class="btn btn-light">Cancel</a>
+            <a href="{{ route('users.index') }}" class="btn btn-outline-secondary">Cancel</a>
         </form>
     </div>
 </div>

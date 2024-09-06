@@ -5,7 +5,7 @@
             <h1 class="mb-5">Meet Our Guide</h1>
         </div>
         <div class="row g-4">
-            @foreach($allguides as $guide)
+            @foreach($allguides->slice(0, 4) as $guide)
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <a href="{{ url('guide/' . $guide->id) }}">
                     <div class="team-item">
@@ -15,10 +15,15 @@
                        
                         <div class="text-center p-4">
                             <h5 class="mb-0">{{$guide->name}}</h5>
-                            <small>{{$guide->description}}</small>
+                            <small style="color:grey;">{{$guide->description}}</small>
                         </div>
+                        <div class="text-center mb-10">
+                                <a href="{{ url('guide/' . $guide->id) }}" class="btn btn-primary ">show guide profile</a>
+                            </div>
                     </div>
+                    
                 </a>
+                
                 </div>
             @endforeach
 

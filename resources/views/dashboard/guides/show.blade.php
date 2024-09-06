@@ -14,13 +14,8 @@
         <p><strong>Gender:</strong> {{ $guide->gender }}</p>
         <p><strong>Description:</strong></p>
         <p>{{ $guide->description }}</p>
-        <a href="{{ route('guides.index') }}" class="btn btn-light">Back to List</a>
-        <a href="{{ route('guides.edit', $guide->id) }}" class="btn btn-outline-info">Edit</a>
-        <form action="{{ route('guides.destroy', $guide->id) }}" method="POST" style="display:inline-block;">
-            @csrf
-            @method('DELETE')
-            <button type="submit" class="btn btn-outline-danger">Delete</button>
-        </form>
+        <a href="{{ route('guides.index') }}" class="btn btn-gradient-primary me-2">Back to List</a>
+       
     </div>
 </div>
 @endsection

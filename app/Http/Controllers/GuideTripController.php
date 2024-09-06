@@ -39,7 +39,7 @@ class GuideTripController extends Controller
             ]
 
         );
-        return to_route('trips.index');
+        return to_route('trips.showadmin', $tripid);
     }
 
     /**

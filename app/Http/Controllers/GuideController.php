@@ -23,7 +23,7 @@ class GuideController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
             'description' => 'required|string',
             'age' => 'required|string|max:10',
             'gender' => 'required|string|max:10',

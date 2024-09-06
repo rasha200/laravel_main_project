@@ -17,8 +17,8 @@
 
                     </select>
                 </div>
-                <button type="submit" class="btn btn-outline-primary">Add guide</button>
-                <a href="{{route('trips.index')}}" class="btn btn-light">Cancel</a>
+                <button type="submit" class="btn btn-outline-warning">Add guide</button>
+                <a href="{{route('trips.showadmin', $tripid)}}" class="btn btn-outline-secondary">Cancel</a>
             </form>
         </div>
     </div>

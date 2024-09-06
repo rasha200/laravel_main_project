@@ -25,7 +25,7 @@
 </div>
             <div id="categoriesCarousel" class="carousel slide">
                 <div class="carousel-inner">
-                    @foreach($categories->chunk(4) as $chunk)
+                    @foreach($categories->chunk(20) as $chunk)
                         <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                             <div class="row">
                                 @foreach($chunk as $category)
@@ -48,14 +48,7 @@
                         </div>
                     @endforeach
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+               
             </div>
         </div>
     </div>

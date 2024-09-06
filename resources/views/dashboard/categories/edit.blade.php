@@ -29,7 +29,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-outline-info"> Update</button>
-                        <button class="btn btn-light">Cancel</button>
+                        <button class="btn btn-outline-secondary">Cancel</button>
                     </form>
                 </div>
             </div>

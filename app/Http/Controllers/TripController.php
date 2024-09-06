@@ -116,7 +116,7 @@ class TripController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(trip $trip)
+    public function destroy($trip)
     {
         $trip->delete();
         return to_route('trips.index');

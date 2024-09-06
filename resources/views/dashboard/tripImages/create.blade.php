@@ -15,7 +15,7 @@
              
                 <button type="submit" class="btn btn-outline-success">Add images</button>
 
-                <a href="{{route('trips.index')}}" class="btn btn-light">Cancel</a>
+                <a href="{{route('trips.showadmin', $tripid)}}" class="btn btn-outline-secondary">Cancel</a>
             </form>
            
         </div>

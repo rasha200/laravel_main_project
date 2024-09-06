@@ -32,7 +32,7 @@
                 </select>
             </div>
             <button type="submit" class="btn btn-gradient-primary me-2">Add new guide</button>
-            <a href="{{ route('guides.index') }}" class="btn btn-light">Cancel</a>
+            <a href="{{ route('guides.index') }}" class="btn btn-outline-secondary">Cancel</a>
         </form>
     </div>
 </div>

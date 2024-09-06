@@ -222,6 +222,13 @@
     left: 0;
 }
 
+.package-item img {
+    width: 100%; /* Full width */
+    height: 250px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
 
 /*** Service ***/
 .service-item {

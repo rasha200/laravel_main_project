@@ -34,8 +34,8 @@
            
            
            @endif
-            <button type="submit" class="btn btn-gradient-primary me-2">Update</button>
-            <a href="{{ route('users.index') }}" class="btn btn-light">Cancel</a>
+            <button type="submit" class="btn btn-outline-info">Update</button>
+            <a href="{{ route('users.index') }}" class="btn btn-outline-secondary">Cancel</a>
         </form>
     </div>
 </div>

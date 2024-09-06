@@ -28,7 +28,7 @@
 
 
                         <button type="submit" class="btn btn-gradient-primary me-2">Add new category</button>
-                        <a href="{{route('categories.index')}}" class="btn btn-light">Cancel</a>
+                        <a href="{{route('categories.index')}}" class="btn btn-outline-secondary">Cancel</a>
                     </form>
                 </div>
             </div>

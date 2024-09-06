@@ -76,7 +76,7 @@
 
 
                     <button type="submit" class="btn btn-gradient-primary me-2">Add new trip</button>
-                    <a href="{{route('trips.index')}}" class="btn btn-light">Cancel</a>
+                    <a href="{{route('trips.index')}}" class="btn btn-outline-secondary">Cancel</a>
 
                 </form>
             </div>
