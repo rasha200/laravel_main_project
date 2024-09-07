@@ -48,7 +48,7 @@
             </div>
 
 
-            <div class="row g-4 mt-5">
+            <div class="row g-4 mt-5 mb-5 pb-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h5>Who We Are</h5>
                     <p class="mb-4">Welcome to <span class="text-primary">Quick Journey</span>, where the spirit of adventure meets unparalleled expertise. We are a team of passionate explorers and travel enthusiasts dedicated to curating unforgettable adventure experiences across the globe. Our mission is to bring you closer to the wild and the wonderful, offering a range of meticulously planned trips that cater to every thrill-seeker’s desires. With a combined experience of over 4 years in the travel industry, we pride ourselves on delivering authentic, immersive, and transformative adventures that resonate long after the journey ends.<br><br>
@@ -88,7 +88,59 @@ Our ultimate goal is to empower our travelers to embark on meaningful journeys t
                     </div>
                 </div>
             </div>
+
+            <div class="text-center wow fadeInUp mt-5" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonials</h6>
+                <h1 class="mb-5">Share your feedback with us</h1>
+            </div>
+
+            <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                   
+                        
+                        <form action="{{ route('testimonials.store') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="user_id" value="@if(auth()->check()) {{ auth()->user()->id }} @endif">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                               placeholder="Your Name" readonly value="{{ auth()->user()->name }}">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                               placeholder="Your Email" readonly value="{{ auth()->user()->email }}">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control @error('testimonial') is-invalid @enderror" placeholder="Your testimonial" id="message" name="testimonial" style="height: 100px" required>{{ old('message') }}</textarea>
+                                        <label for="message">Add your testimonial</label>
+                                        @error('testimonial')
+                        <span class="invalid-feedback d-block" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                                    </div>
+                                </div>
+                               
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    </div>
+                                
+
+                            </div>
+                        </form>
+                   
+                </div>
         </div>
+        
     </div>
+
+    
 
 @endsection

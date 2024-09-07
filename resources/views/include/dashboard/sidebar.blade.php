@@ -28,18 +28,21 @@
                 <i class="mdi mdi-collage menu-icon"></i>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{route('trips.index')}}">
-                <span class="menu-title">Trips</span>
-                <i class="mdi mdi-airballoon menu-icon"></i>
-            </a>
-        </li>
+
         <li class="nav-item">
             <a class="nav-link" href="{{route('guides.index')}}">
                 <span class="menu-title">Guide</span>
                 <i class="mdi mdi-account-star menu-icon"></i>
             </a>
         </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('trips.index')}}">
+                <span class="menu-title">Trips</span>
+                <i class="mdi mdi-airballoon menu-icon"></i>
+            </a>
+        </li>
+       
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('booking.index') }}">

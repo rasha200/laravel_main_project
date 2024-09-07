@@ -23,10 +23,11 @@
                         <div class="text-center p-4">
                             <h5 class="mb-0">{{$guide->name}}</h5>
                             <small style="color:grey;">{{$guide->description}}</small>
-                        </div>
-                        <div class="text-center mb-10">
+                            <div class="text-center mt-4">
                                 <a href="{{ url('guide/' . $guide->id) }}" class="btn btn-primary ">show guide profile</a>
                             </div>
+                        </div>
+                       
                     </div>
                 </a>
                 </div>
